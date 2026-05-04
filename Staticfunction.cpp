@@ -17,3 +17,14 @@ public:
     static void setNim(int pnim) {
         nim = pnim;
     }
+
+    static int getNim() {
+        return nim;
+    }
+
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
+    }
+};
+
+int Mahasiswa::nim = 0;
